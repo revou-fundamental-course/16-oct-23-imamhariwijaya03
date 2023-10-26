@@ -53,8 +53,10 @@ header img {
     height: auto;
 }
 img {
-    max-width: 80%; /* Mengatur lebar maksimum gambar menjadi 100% dari lebar wadahnya */
+    max-width: 60%;
     height: auto; /* Memastikan gambar tetap proporsional */
+    border: 3px solid #fff; /* Garis putih tipis di sekitar gambar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Efek bayangan ketika hover */
 }
 .navbar {
     float: center;
@@ -63,23 +65,26 @@ img {
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
 nav li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav a {
-    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 18px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Efek transisi perubahan warna latar belakang */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #ff9900; /* Warna latar belakang berubah ketika kursor di atasnya */
 }
+
 
 /* Bagian-Bagian Responsif */
 section {
