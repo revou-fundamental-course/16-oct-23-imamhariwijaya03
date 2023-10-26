@@ -16,7 +16,7 @@
    
 }
 header {
-    background-image: url('css/pictures/gedung.jpg'); /* Menggunakan path relatif ke gambar latar belakang */
+    background-image: url('assets/gedung.jpg'); /* Menggunakan path relatif ke gambar latar belakang */
     background-size: cover; /* Menyesuaikan gambar dengan ukuran header */
     background-position: center; /* Posisi gambar latar belakang di tengah header */
     background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
