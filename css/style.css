@@ -1,0 +1,181 @@
+/* Gaya Logo */
+.logo {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 80px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+}
+
+/* Gaya Header Content */
+.header-content {
+    text-align: right;
+    margin-right: 40px; /* Jarak dari logo ke konten */
+   
+}
+header {
+    background-image: url('css/pictures/gedung.jpg'); /* Menggunakan path relatif ke gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar dengan ukuran header */
+    background-position: center; /* Posisi gambar latar belakang di tengah header */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+}
+* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+     
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    max-width: 80%; /* Mengatur lebar maksimum gambar menjadi 100% dari lebar wadahnya */
+    height: auto; /* Memastikan gambar tetap proporsional */
+}
+.navbar {
+    float: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Bagian-Bagian Responsif */
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Formulir Kontak Responsif */
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff9900;
+}
+
+/* Grid Responsif untuk Galeri */
+#galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Media Query untuk Perangkat Mobile */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header img {
+        max-width: 80%;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    form input,
+    form textarea {
+        margin-bottom: 10px;
+    }
+    form button {
+        padding: 10px 15px;
+    }
+    #galeri {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+}

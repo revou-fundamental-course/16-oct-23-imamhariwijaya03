@@ -1,0 +1,92 @@
+<DOCTYPE! html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <!--<link href="/dist/output.css" rel="stylesheet">-->
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <title>Bluemoon</title>
+        </head>
+        <body>
+            <header>
+                <h1>Welcome to Bluemoon</h1>
+                <div class="logo">
+                    <img src="assets/bluemoon.png" alt="Logo Perusahaan">
+                </div>
+        <div class="headercontent">   
+            <nav>
+                <ul>
+                    <li><a onclick="scrollToSection('home')">Home</a></li>
+                    <li><a onclick="scrollToSection('aboutus')">About Us</a></li>
+                    <li><a onclick="scrollToSection('services')">Services</a></li>
+                    <li><a onclick="scrollToSection('galery')">Galery</a></li>
+                    <li><a onclick="scrollToSection('contact')">Contact</a></li>
+                </ul>
+            </nav>
+        </div> 
+        </header>
+            <section id="home">
+                <h2>Home</h2>
+               <p id="greeting">Hello,</p>
+               <p>Welcome to Bluemoon, we are committed to providing the best service in this industry, from site survey services to base tower station installation and optimization. We have a skilled and experienced team in meeting the needs of our clients, including leading telecommunications operators in various countries.
+                </p>
+            </section>
+            
+            <section id="aboutus">
+                <h2>About Us</h2>
+                <p>We are a company that provides various high quality services for your needs in the field of Cellular Telecommunications. Bluemoon Telecommunications is a company that has been established since 2000, and we are a leader in the telecommunications industry. We have successfully completed hundreds of telecommunications projects at international level. Since 2000, we have successfully completed hundreds of telecommunications projects covering various technologies and regional coverage. We are proud to be partners with leading telecommunications operators around the world, including in Indonesia, Singapore, the Philippines and Malaysia.</p>
+                
+            </section>
+            
+            <section id="services">
+                <h2>Services</h2>
+                <p>We provide a variety of high-quality services in the telecommunications sector, including:</p>
+                    <h3>Location survey</h3>
+                    <img src="assets/surveylocation.jpeg" alt="Location Survey">
+                    <h3>Acquisition site</h3>
+                    <img src="assets/sitac.jpeg" alt="Acquisition Site">
+                    <h3>Civil Mechanical Engineering</h3>
+                    <img src="assets/civilmechanicalengineering.jpg" alt="Civil Mechanical Engineering">
+                    <h3>Device Installation</h3>
+                    <img src="assets/deviceinstalation.jpg" alt="Device Installation">
+                    <h3>Device Integration</h3>
+                    <img src="assets/integrasi.jpg" alt="Device Integration">
+                    <h3>Optimization</h3>
+                    <img src="assets/optimization.jpeg" alt="Device Optimization">
+            </section>
+            
+            <section id="galery">
+                <h2>Galery</h2>
+                <h3>Proyek 1</h3>
+                <img src="assets//16m_31122021_105050.jpg" alt="Proyek 1">
+               
+                <h3>Proyek 2</h3>
+                <img src="assets/65m_19092021_164234.jpg" alt="Proyek 2">
+               
+            </section>
+            
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Address Jalan Jakarta No. 123, Kota Jakarta</p>
+                <p>NPhone Number: (123) 456-7890</p>
+                <p>Email: info@bluemoon.com</p>
+                <h3>Contact Form</h2>
+                    <form action="proses-form.php" method="post">
+                        <label for="nama">Name:</label>
+                        <input type="text" id="nama" name="nama">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <label for="pesan">Message:</label>
+                        <textarea id="pesan" name="pesan"></textarea>
+                        <br>
+                        <button type="button" onclick="tampilkanPesan()">Submit</button>
+                        <br><br>
+                        <textarea id="output" name="output"></textarea>
+            </section>
+            
+            <script src="script/script.js"></script>
+        </body>
+        
+    </html>
